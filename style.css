@@ -1,0 +1,72 @@
+body {
+    font-family: "Titan One", serif;
+    background: rgb(235, 84, 115);
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+    color: white;
+    height: 100vh;  
+    margin: 0;
+}
+
+.text-container {
+    text-align: center;
+    margin-bottom: 20px; 
+}
+
+.tenor-gif-embed 
+{
+    width: 100%; 
+    max-width: 300px; 
+    height: auto;
+    margin-top: 20px;  
+    border-radius: 6%;
+    border: 5px solid white;
+}
+
+.project-btn 
+{
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #ff65a1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.project-btn:hover 
+{
+    background-color: #ff3183;
+}
+
+#heart-container 
+{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    pointer-events: none; 
+}
+
+.heart 
+{
+    position: absolute;
+    color: #ffb6f2;
+    font-size: 50px;
+    animation: floatHeart 3s ease-in forwards;
+}
+
+@keyframes floatHeart 
+{
+    0% {
+        transform: translate(0, 0) scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(var(--rand-x), var(--rand-y)) scale(1.5);
+        opacity: 0;
+    }
+}
