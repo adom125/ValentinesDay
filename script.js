@@ -29,3 +29,9 @@ function startFloatingHearts()
         }, 5000);  
     }
 }
+function displayMessage() 
+{
+    const yayMessageContainer = document.getElementById('yay-message-container');
+    
+    yayMessageContainer.textContent = "Yay!";
+}
