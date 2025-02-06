@@ -41,7 +41,14 @@ body {
 {
     background-color: #ff3183;
 }
-
+#yay-message-container 
+{
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: white; 
+    text-align: center;
+}
 #heart-container 
 {
     position: absolute;
